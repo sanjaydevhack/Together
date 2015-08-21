@@ -1,0 +1,36 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/facebook_login"
+        style="@style/LoginUI.Button.ThirdPartyLogin"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:background="@drawable/facebook_login_button_background_selector"
+        android:drawableLeft="@drawable/facebook_login_logo"
+        android:text="@string/facebook_login_button_label"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/twitter_login"
+        style="@style/LoginUI.Button.ThirdPartyLogin"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:background="@drawable/twitter_login_button_background_selector"
+        android:drawableLeft="@drawable/twitter_login_logo"
+        android:text="@string/twitter_login_button_label"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/register"
+        style="@style/LoginUI.Button.ThirdPartyLogin"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:background="@drawable/register_button_background_selector"
+        android:text="@string/register"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/LoginUI.Button.ThirdPartyLogin"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:background="@drawable/login_button_background_selector"
+        android:text="@string/loginBtn"
+        android:visibility="visible" />
+</merge>

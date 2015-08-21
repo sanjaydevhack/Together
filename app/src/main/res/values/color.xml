@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#027cd5</color>
+    <color name="colorPrimaryDark">#006cb4</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#8e8e8e</color>
+
+    <!--Facebook and Twitter Color -->
+    <color name="facebook_login_button">#3B5998</color>
+    <color name="facebook_login_button_push">#2E4677</color>
+    <color name="facebook_login_button_focus">#304F8B</color>
+
+    <color name="twitter_login_button">#2DAAE2</color>
+    <color name="twitter_login_button_push">#2588B5</color>
+    <color name="twitter_login_button_focus">#2788BE</color>
+
+    <!--Register Button Color-->
+    <color name="register_button">#2a5934</color>
+    <color name="register_button_push">#ff124e59</color>
+    <color name="register_button_focus">#ff392359</color>
+
+    <!--Login Button Color-->
+    <color name="login_button">#2588B5</color>
+    <color name="login_button_push">#2DAAE2</color>
+    <color name="login_button_focus">#2788BE</color>
+
+    <!--Chat Bubble & Text Colors-->
+    <color name="bg_msg_you">#5eb964</color>
+    <color name="bg_msg_from">#e5e7eb</color>
+    <color name="lblFromName">#777777</color>
+    <color name="title_gray">#434343</color>
+
+    <!--Common Colors-->
+    <color name="white">#FFFFFF</color>
+</resources>

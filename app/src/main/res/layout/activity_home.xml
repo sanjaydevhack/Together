@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanafoundation.sanjaym.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/lay_home_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/home_toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_home_bottom_toolbar"
+        android:layout_below="@+id/lay_home_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/lay_home_bottom_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/home_bottom_toolbar"
+            layout="@layout/bottom_toolbar" />
+    </LinearLayout>
+
+</RelativeLayout>

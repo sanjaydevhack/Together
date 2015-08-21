@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/uNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:hint="@string/uName" />
+
+    <EditText
+        android:id="@+id/uPassET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uNameET"
+        style="@style/EditText"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:hint="@string/uPass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loignBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uPassET"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/loginBtn"
+        android:textColor="@drawable/button_selector"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loignBtn"
+        android:layout_marginTop="15dp">
+
+        <TableRow
+            android:id="@+id/textRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/forgetPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/forgetPass"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/no_acc_create_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/newUser"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

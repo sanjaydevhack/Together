@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/create_uName"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/create_uName"/>
+
+    <EditText
+        android:id="@+id/create_password"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:fontFamily="sans-serif"
+        android:hint="@string/create_new_password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:fontFamily="sans-serif"
+        android:hint="@string/retype_password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/enter_mail"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:hint="@string/enter_email_id"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/full_name"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:hint="@string/enter_full_name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/create_account"
+        style="@style/Login.Button"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:text="@string/signup" />
+
+</LinearLayout>

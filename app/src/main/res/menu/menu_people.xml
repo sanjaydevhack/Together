@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sanafoundation.sanjaym.PeopleFragment">
+    <item
+        android:id="@+id/action_search_people"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:title="@string/search_people"
+        app:showAsAction="collapseActionView|ifRoom" />
+</menu>

@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sanafoundation.sanjaym.SettingsFragment">
+
+    <com.sanafoundation.sanjaym.utils.RoundedImageView
+        android:id="@+id/profile_image"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Sanjayjith M"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/settings_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-light" />
+
+</LinearLayout>

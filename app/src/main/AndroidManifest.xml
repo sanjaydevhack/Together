@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sanafoundation.sanjaym" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNEVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission android:name="com.sanafoundation.sanjaym.permissioT" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <permission
+        android:name="com.sanafoundation.sanjaym.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.sanafoundation.sanjaym.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon_music"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme" >
+        <activity android:name=".MultiLoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile" />
+        <activity
+            android:name=".ChangeProfilePicActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name=".receiver.CustomPushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.sanafoundation.sanjaym" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".StartChat"
+            android:label="@string/title_activity_start_chat"
+            android:theme="@style/StartChatBackground"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".utils.CaptureFromCamera"
+            android:label="@string/title_activity_capture_from_camera" >
+        </activity>
+        <activity android:name=".utils.SelectFromGallery" />
+
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@drawable/app_logo" />
+
+        <activity
+            android:name=".CreateNewGroupActivity"
+            android:label="@string/title_activity_create_new_group" >
+        </activity>
+
+    </application>
+
+</manifest>
