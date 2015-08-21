@@ -1,1 +1,2 @@
-Simple Chat Application, and it is still under development.
+Simple Chat Application, and it is still under development. I used Parse to authenticate the user
+and used Firebase to make chat.
