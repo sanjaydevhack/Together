@@ -64,4 +64,5 @@
     <string name="title_activity_start_chat">StartChat</string>
     <string name="title_activity_capture_from_camera">CaptureFromCamera</string>
     <string name="title_activity_create_new_group">CreateNewGroupActivity</string>
+    <string name="title_activity_creating_new_group">CreatingNewGroup</string>
 </resources>

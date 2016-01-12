@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.sanafoundation.sanjaym.R;
 import com.sanafoundation.sanjaym.model.People;
-import com.sanafoundation.sanjaym.utils.ImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +23,7 @@ public class PeopleAdapter extends BaseAdapter {
     Fragment fragment;
     Context context;
     LayoutInflater inflater;
-    ImageLoader imageLoader;
+    //ImageLoader imageLoader;
     private List<People> peopleList = null;
     private ArrayList<People> arraylist;
 

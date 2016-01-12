@@ -37,9 +37,6 @@ import com.sanafoundation.sanjaym.adapter.ChatListAdapter;
 import com.sanafoundation.sanjaym.helper.PrefManager;
 import com.sanafoundation.sanjaym.model.Chat;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.List;
 
 
@@ -255,7 +252,7 @@ public class StartChat extends AppCompatActivity {
 
         if (user2ObjectId != null) {
 
-            /*ParseQuery pushQuery = ParseInstallation.getQuery();
+            ParseQuery pushQuery = ParseInstallation.getQuery();
             pushQuery.whereEqualTo("user", user2ObjectId);
             ParseUser currentUser = ParseUser.getCurrentUser();
             String message = currentUser.getString("name") + " says Hi!";
@@ -263,9 +260,9 @@ public class StartChat extends AppCompatActivity {
             ParsePush push = new ParsePush();
             push.setQuery(pushQuery); // Set our Installation query
             push.setMessage(message);
-            push.sendInBackground();*/
+            push.sendInBackground();
 
-            JSONObject obj;
+            /*JSONObject obj;
             try {
                 obj = new JSONObject();
                 obj.put("customdata", input);
@@ -282,7 +279,7 @@ public class StartChat extends AppCompatActivity {
             } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
-            }
+            }*/
         }
     }
 

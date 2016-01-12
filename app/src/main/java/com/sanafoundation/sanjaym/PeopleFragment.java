@@ -28,6 +28,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.sanafoundation.sanjaym.adapter.PeopleAdapter;
+import com.sanafoundation.sanjaym.app.AppController;
 import com.sanafoundation.sanjaym.helper.PrefManager;
 import com.sanafoundation.sanjaym.model.People;
 
@@ -37,25 +38,17 @@ import java.util.List;
 
 public class PeopleFragment extends Fragment {
 
-    ListView listview;
-    List<ParseUser> obj;
-    ProgressDialog mProgressDialog;
-    PeopleAdapter adapter;
-    protected static List<People> peopleList = new ArrayList<People>();
-
     private PrefManager pref;
-
-    private String objectIdStr;
-
+    com.android.volley.toolbox.ImageLoader imageLoader = AppController.getInstance().getImageLoader();
+    private ListView listview;
+    private List<ParseUser> obj;
+    private ProgressDialog mProgressDialog;
+    private PeopleAdapter adapter;
+    protected static List<People> peopleList = new ArrayList<People>();
     Activity mActivity;
-
     private ParseObject entryToRecentChat;
     private ParseQuery<ParseObject> groupIdQuery;
-    private String user1ObjectId, user1Name;
-    private String user2ObjectId, user2Name;
-    private String recentClassObjectId;
-
-    private String groupId;
+    private String objectIdStr, user1ObjectId, user1Name, user2ObjectId, user2Name, recentClassObjectId, groupId;
 
     public static final String gId = "gIdKey";
 
@@ -133,7 +126,6 @@ public class PeopleFragment extends Fragment {
                                             Bitmap bmp = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
                                             people.setPic(bmp);
                                             Log.d("ImageCoversionIf", postImage.toString());
-
                                         }
                                     });
                                 } else {
@@ -229,7 +221,6 @@ public class PeopleFragment extends Fragment {
                         recentClassObjectId = dealsObject.getObjectId();
                         groupId = (String) dealsObject.get("groupId");
                         Log.d("!!!!!GroupId", groupId);
-
                     }
 
                     Intent startChat = new Intent(getActivity(), StartChat.class);

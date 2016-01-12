@@ -37,4 +37,5 @@ dependencies {
 
     compile 'com.pkmmte.view:circularimageview:1.1'
 
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
 }
